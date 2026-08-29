@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #090909;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* NAVBAR */
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 7%;
+
+  background: rgba(9, 9, 9, 0.95);
+  border-bottom: 1px solid #252525;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.logo span,
+footer span,
+.hero span {
+  color: #c9a96e;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  color: #aaa;
+}
+
+.nav-links a:hover {
+  color: #c9a96e;
+}
+
+.cart {
+  border: 1px solid #444;
+  padding: 8px 15px;
+  border-radius: 30px;
+}
+
+.cart span {
+  color: #c9a96e;
+  font-weight: bold;
+}
+
+/* HERO */
+
+.hero {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+
+  padding: 120px 7% 70px;
+
+  background: radial-gradient(
+    circle at 75% 45%,
+    #40382c 0%,
+    #171717 30%,
+    #090909 70%
+  );
+}
+
+.hero-content {
+  max-width: 650px;
+}
+
+.eyebrow {
+  color: #c9a96e;
+  letter-spacing: 5px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.hero h1 {
+  font-size: clamp(60px, 10vw, 110px);
+  line-height: 0.9;
+  letter-spacing: -4px;
+  margin: 25px 0;
+}
+
+.hero p {
+  color: #aaa;
+  font-size: 18px;
+  max-width: 520px;
+  margin-bottom: 30px;
+}
+
+/* BUTTONS */
+
+.btn {
+  display: inline-block;
+  padding: 14px 27px;
+
+  background: #c9a96e;
+  color: #000;
+
+  border: 1px solid #c9a96e;
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: transparent;
+  color: #c9a96e;
+}
+
+.outline {
+  margin-left: 10px;
+  background: transparent;
+  color: #fff;
+  border-color: #555;
+}
+
+/* SECTIONS */
+
+section {
+  padding: 90px 7%;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.section-title small {
+  color: #c9a96e;
+  letter-spacing: 4px;
+}
+
+.section-title h2 {
+  font-size: 42px;
+  margin-top: 10px;
+}
+
+/* FILTERS */
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 35px;
+  flex-wrap: wrap;
+}
+
+.filter {
+  padding: 10px 20px;
+
+  border-radius: 30px;
+
+  border: 1px solid #444;
+
+  background: transparent;
+  color: #fff

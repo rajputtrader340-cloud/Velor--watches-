@@ -13,27 +13,349 @@
 
   <!-- NAVBAR -->
   <nav>
-    <a href="#home" class="logo">VÉLOR<span>.</span></a>
+
+    <a href="index.html" class="logo">
+      VÉLOR<span>.</span>
+    </a>
 
     <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#collection">Collection</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
+
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+
+      <li>
+        <a href="watches.html">Watches</a>
+      </li>
+
+      <li>
+        <a href="about.html">About</a>
+      </li>
+
+      <li>
+        <a href="contact.html">Contact</a>
+      </li>
+
     </ul>
 
     <div class="cart">
-      🛒 Cart <span id="cartCount">0</span>
+      🛒 Cart
+      <span id="cartCount">0</span>
     </div>
+
   </nav>
 
 
   <!-- HERO -->
   <section class="hero" id="home">
+
     <div class="hero-content">
 
-      <div class="eyebrow">VÉLOR WATCHES</div>
+      <div class="eyebrow">
+        VÉLOR WATCHES
+      </div>
 
       <h1>
         TIME.<br>
-        <span>
+        <span>REFINED.</span>
+      </h1>
+
+      <p>
+        Premium men's watches designed for those
+        who appreciate timeless style, precision
+        and confidence.
+      </p>
+
+      <a href="watches.html" class="btn">
+        SHOP COLLECTION
+      </a>
+
+      <a href="about.html" class="btn outline">
+        OUR STORY
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- FEATURED COLLECTION -->
+  <section id="collection">
+
+    <div class="section-title">
+
+      <small>
+        OUR COLLECTION
+      </small>
+
+      <h2>
+        Featured Watches
+      </h2>
+
+    </div>
+
+
+    <div class="products">
+
+
+      <!-- WATCH 1 -->
+      <div class="product">
+
+        <div class="product-img">
+
+          <img
+            src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=80"
+            alt="VÉLOR Classic Black Watch">
+
+        </div>
+
+        <div class="product-info">
+
+          <small>
+            CLASSIC
+          </small>
+
+          <h3>
+            VÉLOR Classic Black
+          </h3>
+
+          <p>
+            Rs. 12,999
+          </p>
+
+          <button onclick="addToCart()">
+            ADD TO CART
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <!-- WATCH 2 -->
+      <div class="product">
+
+        <div class="product-img">
+
+          <img
+            src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=800&q=80"
+            alt="VÉLOR Gold Edition">
+
+        </div>
+
+        <div class="product-info">
+
+          <small>
+            LUXURY
+          </small>
+
+          <h3>
+            VÉLOR Gold Edition
+          </h3>
+
+          <p>
+            Rs. 18,999
+          </p>
+
+          <button onclick="addToCart()">
+            ADD TO CART
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <!-- WATCH 3 -->
+      <div class="product">
+
+        <div class="product-img">
+
+          <img
+            src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&w=800&q=80"
+            alt="VÉLOR Chrono X">
+
+        </div>
+
+        <div class="product-info">
+
+          <small>
+            SPORT
+          </small>
+
+          <h3>
+            VÉLOR Chrono X
+          </h3>
+
+          <p>
+            Rs. 15,999
+          </p>
+
+          <button onclick="addToCart()">
+            ADD TO CART
+          </button>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+    <div style="text-align:center; margin-top:40px;">
+
+      <a href="watches.html" class="btn">
+        VIEW ALL WATCHES
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- FEATURES -->
+  <section class="features">
+
+    <div>
+
+      <h3>
+        ⌚ Premium Design
+      </h3>
+
+      <p>
+        Modern designs made for everyday confidence.
+      </p>
+
+    </div>
+
+
+    <div>
+
+      <h3>
+        ✓ Quality Focused
+      </h3>
+
+      <p>
+        Carefully selected materials and reliable movement.
+      </p>
+
+    </div>
+
+
+    <div>
+
+      <h3>
+        🚚 Fast Delivery
+      </h3>
+
+      <p>
+        Safe delivery to your doorstep.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT PREVIEW -->
+  <section class="about">
+
+    <div class="about-box">
+      ⌚
+    </div>
+
+
+    <div>
+
+      <small>
+        OUR STORY
+      </small>
+
+      <h2>
+        Made for Every Moment.
+      </h2>
+
+      <p>
+        VÉLOR was created with one simple idea:
+        a watch should be more than something
+        that tells time.
+      </p>
+
+      <p>
+        It should become part of your style,
+        confidence and everyday life.
+      </p>
+
+      <a href="about.html" class="btn">
+        READ OUR STORY
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+
+    <small>
+      STAY UPDATED
+    </small>
+
+    <h2>
+      Join VÉLOR
+    </h2>
+
+    <p>
+      Get updates about new arrivals and exclusive offers.
+    </p>
+
+
+    <form onsubmit="subscribe(event)">
+
+      <input
+        type="email"
+        placeholder="Enter your email"
+        required
+      >
+
+      <button type="submit">
+        SUBSCRIBE
+      </button>
+
+    </form>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <h2>
+      VÉLOR<span>.</span>
+    </h2>
+
+    <p>
+      Time. Refined.
+    </p>
+
+    <p>
+      WhatsApp: +92 319 3000533
+    </p>
+
+    <p>
+      Email: hello@velorwatches.com
+    </p>
+
+    <p>
+      © 2026 VÉLOR Watches
+    </p>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
